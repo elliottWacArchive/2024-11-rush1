@@ -47,10 +47,10 @@ function error() {
     let errorMessage = "";
 
     if (name.value === "") {
-        errorMessage += "Le champ nom est requis. \n";
+        errorMessage += "Le nom est requis. \n";
         name.style.borderColor = "red";
         name.style.backgroundColor = "#ff919c";
-    } else if (!/^[A-Za-z]{2,}$/.test(name.value)) {
+    } else if (!!/.*[a-zA-Z].*[a-zA-Z].*/.test(name.value)) {
         // Vérifie si la chaîne name correspond au motif regex (2 lettres min)
         errorMessage += "Le nom doit contenir au moins 2 lettres. \n";
         name.style.borderColor = "red";
@@ -58,7 +58,7 @@ function error() {
     }
 
     if (mail.value === "") {
-        errorMessage += "Le champ email est requis. \n";
+        errorMessage += "L'email est requis. \n";
         mail.style.borderColor = "red";
         mail.style.backgroundColor = "#ff919c";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail.value)) {
@@ -68,7 +68,7 @@ function error() {
     }
 
     if (phone.value === "") {
-        errorMessage += "Le champ numéro est requis. \n";
+        errorMessage += "Le numéro est requis. \n";
         phone.style.borderColor = "red";
         phone.style.backgroundColor = "#ff919c";
     } else if (!/^\d{2,}$/.test(phone.value)) {

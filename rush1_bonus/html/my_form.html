@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="../css/my_style.css" />
+        <link rel="stylesheet" href="../css/cursor.css" />
+        <script defer src="../js/my_script.js"></script>
+        <link rel="icon" href="../img/mikuicon.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bokor&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="hidden alert">
+            <div class="leftSide">
+                <div id="textAlert"></div>
+                <div id="buttonVerif">
+                    <button id="oui">Oui</button>
+                    <button id="non">Non</button>
+                </div>
+            </div>
+            <img id="mikuImg" src="../img/miku-ragegif.gif" alt="" />
+            <img id="cross" src="../img/cross.png" alt="" />
+        </div>
+        <form onsubmit="submitValidation(event)" method="get" id="form">
+            <fieldset class="formContainer">
+                <legend>Formulaire:</legend>
+
+                <div class="elementContainer">
+                    <div class="sexeContainer">
+                        Sexe :
+                        <div class="sexSelector">
+                            <input
+                                name="sexe"
+                                type="radio"
+                                id="homme"
+                                value="homme"
+                                checked
+                            />
+                            <label for="homme">Homme</label>
+                        </div>
+                        <div class="sexSelector">
+                            <input
+                                name="sexe"
+                                type="radio"
+                                id="femme"
+                                value="femme"
+                            />
+                            <label for="femme">Femme</label>
+                        </div>
+                        <div class="sexSelector">
+                            <input
+                                name="sexe"
+                                type="radio"
+                                id="autre"
+                                value="autre"
+                            />
+                            <label for="autre">Autre</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elementContainer">
+                    <label for="civilite">Civilité : </label>
+                    <select name="civilite" id="civilite">
+                        <option value="">-Choisissez une option-</option>
+                        <option value="M">M.</option>
+                        <option value="Mme">Mme.</option>
+                    </select>
+                </div>
+
+                <div class="elementContainer">
+                    <label for="name">Nom :</label>
+                    <input
+                        placeholder="Elliott"
+                        type="text"
+                        id="name"
+                        name="name"
+                        pattern=".*[a-zA-Z].*[a-zA-Z].*"
+                    />
+                </div>
+
+                <div class="elementContainer">
+                    <label for="mail">Mail : </label>
+                    <input
+                        id="mail"
+                        name="mail"
+                        type="email"
+                        placeholder="elliott.ramet-grout@epitech.eu"
+                    />
+                </div>
+
+                <div class="elementContainer">
+                    <label for="telNo">Numéro :</label>
+                    <input
+                        id="telNo"
+                        name="telNo"
+                        type="tel"
+                        placeholder="0768805295"
+                    />
+                </div>
+
+                <div class="elementContainer">
+                    <label for="monURL">URL:</label>
+                    <input
+                        id="monURL"
+                        name="monURL"
+                        type="url"
+                        placeholder="https://whoisdonnie.net/"
+                    />
+                </div>
+
+                <div class="elementContainer">
+                    <label for="birth">Date de naissance :</label>
+                    <input
+                        type="date"
+                        id="birth"
+                        name="birth"
+                        value="1942-12-24"
+                        min="1900-01-01"
+                        max="2025-12-31"
+                    />
+                </div>
+
+                <div class="elementContainer">
+                    <div class="hobbieContainer">
+                        Hobbies :
+                        <div class="checkbox">
+                            <input
+                                type="checkbox"
+                                id="jeux"
+                                name="jeux"
+                                checked
+                            />
+                            <label for="jeux">Jeux vidéo</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cinema" name="cinema" />
+                            <label for="cinema">Cinéma</label>
+                        </div>
+                        <div class="checkbox">
+                            <input
+                                type="checkbox"
+                                id="lecture"
+                                name="lecture"
+                            />
+                            <label for="lecture">Lecture</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="sport" name="sport" />
+                            <label for="sport">Sport</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="info" name="info" />
+                            <label for="info">Informatique</label>
+                        </div>
+                    </div>
+                </div>
+
+                <input
+                    type="hidden"
+                    id="token"
+                    name="token"
+                    value="my first website"
+                />
+                <label for="subButton"> </label>
+                <input
+                    name="subButton"
+                    type="submit"
+                    id="subButton"
+                    value="Validation"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>

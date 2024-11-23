@@ -1,0 +1,205 @@
+:root {
+    --grey: #373b3e;
+    --blue: #86cecb;
+    --rose: #e12885;
+}
+
+body {
+    font-size: 20px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--grey);
+    color: var(--blue);
+    font-family: "miku", system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Hatsune\ Miku\ Vocaloid.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.formContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+    border-color: var(--blue);
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+}
+
+label {
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+legend {
+    font-size: 40px;
+}
+
+input,
+select {
+    font-family: "miku", system-ui;
+    font-size: 20px;
+    height: 30px;
+    background-color: var(--blue);
+    color: var(--rose);
+    border-radius: 5px;
+    accent-color: var(--rose);
+}
+
+::placeholder {
+    color: #94697f;
+}
+
+.elementContainer {
+    padding: 20px;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.2s;
+}
+
+.elementContainer:hover {
+    transform: scale(1.1);
+}
+
+.sexeContainer,
+.hobbieContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#subButton {
+    background-color: var(--blue);
+    font-family: "miku", system-ui;
+    border: none;
+    color: var(--rose);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+#subButton:hover {
+    background-color: var(--rose);
+    color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#buttonVerif button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--blue);
+    font-family: "miku", system-ui;
+    border: none;
+    color: var(--rose);
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: fit-content;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+#buttonVerif button:hover {
+    background-color: var(--rose);
+    color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#buttonVerif {
+    display: flex;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementContainer:nth-of-type(3n) {
+    border: 2px dotted var(--blue);
+    border-radius: 20px;
+}
+
+.alert {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 20%;
+    background-color: var(--grey);
+    border-radius: 20px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    width: auto;
+    font-size: 12px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.textAlert {
+    width: 70%;
+    hyphens: auto;
+}
+#mikuImg {
+    width: 30%;
+    height: 100%;
+}
+
+#cross {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    width: 30px;
+}
+
+@font-face {
+    font-family: "miku";
+    src: url("../font/VOC-IT.ttf");
+}
