@@ -8,95 +8,86 @@
     <script defer src="../js/my_script.js"></script>
 </head>
 <body>
-    <fieldset>
-        <legend>Nom:</legend>        
-        <label for="name">
-              <input
-                placeholder="Elliott" type="text" id="name" name="name" required size="45" pattern=".*[a-zA-Z].*[a-zA-Z].*" />
-        </label>
-    </fieldset>
+    <fieldset class="formContainer">
+        <legend>Formulaire:</legend>    
+    
+        <div class="elementContainer">
+            <label for="name">Nom :</label>
+            <input placeholder="Elliott" type="text" id="name" name="name" required pattern=".*[a-zA-Z].*[a-zA-Z].*" />
+        </div>
 
-    <fieldset>
-        <legend>Date de naissance:</legend>
-        <label for="birth">
-                <input type="date" id="birth" name="birth" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-        </label>
-    </fieldset>
+        <div class="elementContainer">
+            <label for="birth">Date de naissance :</label>
+            <input type="date" id="birth" name="birth" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+        </div>
 
-    <fieldset>
-        <legend>Tel:</legend>
-        <label for="telNo">
+        <div class="elementContainer">
+            <label for="telNo">Numéro :</label>
             <input id="telNo" name="telNo" type="tel" placeholder="0768805295"/>
-        </label>
-    </fieldset>
+        </div>
 
-    <fieldset>
-        <legend>Mail:</legend>
-        <label for="mail">
+        <div class="elementContainer">
+            <label for="mail">Mail : </label>
             <input id="mail" name="mail" type="email" placeholder="elliott.ramet-grout@epitech.eu"/>
-        </label>
-    </fieldset>
-    <fieldset>
-    <legend>Sexe:</legend>
-            <div>
+        </div>
+
+        <div class="elementContainer">
+            <div class="sexeContainer">Sexe :
+            <div class="sexSelector">
                 <input name="sexe" type="radio" id="homme" value="homme" checked />
                 <label for="homme">Homme</label>
             </div>
-            <div>
+            <div class="sexSelector">
                 <input name="sexe" type="radio" id="femme" value="femme" />
                 <label for="femme">Femme</label>
             </div>
-            <div>
+            <div class="sexSelector">
                 <input name="sexe" type="radio" id="autre" value="autre" />
                 <label for="autre">Autre</label>
             </div>
-  </fieldset>
-  <fieldset>
-    <legend>Civilité:</legend>
-    <label for="civilite">
-            <select name="civilite" id="civilite">
-            <option value="">--Choisissez une option--</option>
-            <option value="M">M.</option>
-            <option value="Mme">Mme.</option>
-            </select>
-    </label>
-  </fieldset>
-  <fieldset>
-    <legend>Hobbies:</legend>
-        <div>
-            <input type="checkbox" id="jeux" name="jeux" checked />
-            <label for="jeux">Jeux vidéo</label>
         </div>
-    
-        <div>
-            <input type="checkbox" id="cinema" name="cinema" />
-            <label for="cinema">Cinéma</label>
+        </div>  
+        <div class="elementContainer">
+            <label for="civilite">Civilité : </label>
+                <select name="civilite" id="civilite">
+                    <option value="">-Choisissez une option-</option>
+                    <option value="M">M.</option>
+                    <option value="Mme">Mme.</option>
+                </select>
         </div>
-    
-        <div>
-            <input type="checkbox" id="lecture" name="lecture" />
-            <label for="lecture">Lecture</label>
+
+        <div class="elementContainer">
+        <div class="hobbieContainer">Hobbies :
+                <div>
+                    <input type="checkbox" id="jeux" name="jeux" checked />
+                    <label for="jeux">Jeux vidéo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cinema" name="cinema" />
+                    <label for="cinema">Cinéma</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lecture" name="lecture" />
+                    <label for="lecture">Lecture</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sport" name="sport" />
+                    <label for="sport">Sport</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="info" name="info" />
+                    <label for="info">Informatique</label>
+                </div>
+            </div>
         </div>
-    
-        <div>
-            <input type="checkbox" id="sport" name="sport" />
-            <label for="sport">Sport</label>
-        </div>
-    
-        <div>
-            <input type="checkbox" id="info" name="info" />
-            <label for="info">Informatique</label>
-        </div>
-  </fieldset>
-  <fieldset>
-    <legend>URL:</legend>
-    <label for="monURL">
+
+        <div class="elementContainer">
+            <label for="monURL">URL:</label>
             <input id="monURL" name="monURL" type="url" placeholder="https://whoisdonnie.net/"/>
-    </label>
-  </fieldset>
+        </div>
     <input type="hidden" id="token" name="token" value="my first website" />
-<label for="subButton">
+    <label for="subButton">Valider : </label>
         <input name="subButton" id="subButton" type="submit" value="Validation" />
-</label>
+</fieldset>
 </body>
 </html>
