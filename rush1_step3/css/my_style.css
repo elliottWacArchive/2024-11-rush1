@@ -5,21 +5,21 @@
 }
 
 body {
- font-size: 20px; 
- height: 90vh;
- padding: 0;
- margin: 0;
- overflow: hidden;
- background-color: var(--grey);
- color: var(--blue);
- font-family: "miku", system-ui;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- background-image: url("../img/Hatsune\ Miku\ Vocaloid.jpg");
- background-size: cover;
- background-repeat:no-repeat ;
+    font-size: 20px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--grey);
+    color: var(--blue);
+    font-family: "miku", system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Hatsune\ Miku\ Vocaloid.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .formContainer {
@@ -28,17 +28,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: auto;
     height: 100%;
     border-color: var(--blue);
     border-radius: 20px;
-    backdrop-filter: blur(14px) ;
+    backdrop-filter: blur(14px);
 }
 
 label {
-    width:150px;
+    width: 150px;
     font-size: 20px;
-    text-align: right;
     cursor: pointer;
 }
 
@@ -46,8 +45,9 @@ legend {
     font-size: 40px;
 }
 
-input, select {
-    font-family: "miku", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+input,
+select {
+    font-family: "miku", system-ui;
     font-size: 20px;
     height: 30px;
     background-color: var(--blue);
@@ -75,7 +75,8 @@ input, select {
     transform: scale(1.1);
 }
 
-.sexeContainer, .hobbieContainer{
+.sexeContainer,
+.hobbieContainer {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -84,7 +85,7 @@ input, select {
 
 #subButton {
     background-color: var(--blue);
-    font-family: "miku", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "miku", system-ui;
     border: none;
     color: var(--rose);
     padding: 10px 20px;
@@ -93,23 +94,23 @@ input, select {
     display: inline-block;
     height: fit-content;
     font-size: 30px;
-    border-radius: 5px;  
+    border-radius: 5px;
     transition-duration: 0.4s;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
-  }
+}
 
 #subButton:hover {
-  background-color: var(--rose);
-  color: var(--blue);
-  cursor: pointer;
-  transform: scale(1.2);
+    background-color: var(--rose);
+    color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 #buttonVerif button {
     width: 100px;
     height: 40px;
     background-color: var(--blue);
-    font-family: "miku", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "miku", system-ui;
     border: none;
     color: var(--rose);
     padding: 10px 20px;
@@ -119,8 +120,8 @@ input, select {
     display: inline-block;
     height: fit-content;
     font-size: 20px;
-    border-radius: 5px;  
-    transition-duration: 0.4s;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
 
@@ -138,7 +139,6 @@ input, select {
 .leftSide {
     display: flex;
     flex-direction: column;
-
 }
 
 .elementContainer:nth-of-type(3n) {
@@ -162,14 +162,25 @@ input, select {
     border-radius: 20px;
 }
 
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    width: auto;
+    font-size: 12px;
+}
+
 .hidden {
     visibility: hidden;
 }
 
 .textAlert {
     width: 70%;
+    hyphens: auto;
 }
-.mikuImg {
+#mikuImg {
     width: 30%;
     height: 100%;
 }
