@@ -9,50 +9,35 @@
 </head>
 <body>
     <fieldset>
-        <legend>Nom:</legend>
-        <div id="nameContainer">
-        <label for="nameContainer">
-        <form>
-            <div>
+        <legend>Nom:</legend>        
+        <label for="name">
               <input
-                placeholder="Elliott"
-                type="text"
-                id="uname"
-                name="name"
-                required
-                size="45"
-                pattern=".*[a-zA-Z].*[a-zA-Z].*" />
-            </div>
-          </form>
+                placeholder="Elliott" type="text" id="name" name="name" required size="45" pattern=".*[a-zA-Z].*[a-zA-Z].*" />
         </label>
-        </div>
     </fieldset>
+
     <fieldset>
         <legend>Date de naissance:</legend>
-        <label for="dateContainer">
-            <div id="dateContainer">
-                <input type="date" id="birth" name="birthday" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-            </div>
+        <label for="birth">
+                <input type="date" id="birth" name="birth" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
         </label>
     </fieldset>
+
     <fieldset>
         <legend>Tel:</legend>
-        <label for="telContainer"></label>
-        <div id="telContainer">
+        <label for="telNo">
             <input id="telNo" name="telNo" type="tel" placeholder="0768805295"/>
-        </div>
+        </label>
     </fieldset>
+
     <fieldset>
         <legend>Mail:</legend>
-        <label for="mailContainer"></label>
-        <div id="mailContainer">
+        <label for="mail">
             <input id="mail" name="mail" type="email" placeholder="elliott.ramet-grout@epitech.eu"/>
-        </div>
+        </label>
     </fieldset>
     <fieldset>
     <legend>Sexe:</legend>
-    <label for="sexeContainer">
-        <div id="sexeContainer">
             <div>
                 <input name="sexe" type="radio" id="homme" value="homme" checked />
                 <label for="homme">Homme</label>
@@ -65,25 +50,19 @@
                 <input name="sexe" type="radio" id="autre" value="autre" />
                 <label for="autre">Autre</label>
             </div>
-        </div>
-    </label>
   </fieldset>
   <fieldset>
     <legend>Civilité:</legend>
-    <label for="civilContainer">
-        <div id="civilContainer">
+    <label for="civilite">
             <select name="civilite" id="civilite">
             <option value="">--Choisissez une option--</option>
             <option value="M">M.</option>
             <option value="Mme">Mme.</option>
             </select>
-        </div>
     </label>
   </fieldset>
   <fieldset>
     <legend>Hobbies:</legend>
-    <label for="hobbieContainer"></label>
-    <div id="hobbieContainer">
         <div>
             <input type="checkbox" id="jeux" name="jeux" checked />
             <label for="jeux">Jeux vidéo</label>
@@ -108,25 +87,16 @@
             <input type="checkbox" id="info" name="info" />
             <label for="info">Informatique</label>
         </div>
-    </div>
   </fieldset>
   <fieldset>
     <legend>URL:</legend>
-    <label for="urlContainer">
-        <div id="urlContainer">
+    <label for="monURL">
             <input id="monURL" name="monURL" type="url" placeholder="https://whoisdonnie.net/"/>
-        </div>
     </label>
   </fieldset>
-  <label for="token">
-    <div>
-    <input type="hidden" id="postId" name="postId" value="my first website" />
-    </div>
-</label>
-<label for="submitContainer">
-    <div id="submitContainer">
-        <input type="submit" value="Validation" />
-    </div>
+    <input type="hidden" id="token" name="token" value="my first website" />
+<label for="subButton">
+        <input name="subButton" id="subButton" type="submit" value="Validation" />
 </label>
 </body>
 </html>
