@@ -2,6 +2,6 @@ body {
     cursor: url("../img/cursor/miku.cur"), auto;
 }
 
-input, label {
+input, label, a {
     cursor: url("../img/cursor/miku-select.cur"), auto;
 }
