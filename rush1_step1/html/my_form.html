@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/my_style.css">
+    <script defer src="../js/my_script.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Nom:</legend>
+        <div id="nameContainer">
+        <label for="nameContainer">
+        <form>
+            <div>
+              <input
+                placeholder="Elliott"
+                type="text"
+                id="uname"
+                name="name"
+                required
+                size="45"
+                pattern=".*[a-zA-Z].*[a-zA-Z].*" />
+            </div>
+          </form>
+        </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Date de naissance:</legend>
+        <label for="dateContainer">
+            <div id="dateContainer">
+                <input type="date" id="birth" name="birthday" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+            </div>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Tel:</legend>
+        <label for="telContainer"></label>
+        <div id="telContainer">
+            <input id="telNo" name="telNo" type="tel" placeholder="0768805295"/>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Mail:</legend>
+        <label for="mailContainer"></label>
+        <div id="mailContainer">
+            <input id="mail" name="mail" type="email" placeholder="elliott.ramet-grout@epitech.eu"/>
+        </div>
+    </fieldset>
+    <fieldset>
+    <legend>Sexe:</legend>
+    <label for="sexeContainer">
+        <div id="sexeContainer">
+            <div>
+                <input name="sexe" type="radio" id="homme" value="homme" checked />
+                <label for="homme">Homme</label>
+            </div>
+            <div>
+                <input name="sexe" type="radio" id="femme" value="femme" />
+                <label for="femme">Femme</label>
+            </div>
+            <div>
+                <input name="sexe" type="radio" id="autre" value="autre" />
+                <label for="autre">Autre</label>
+            </div>
+        </div>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Civilité:</legend>
+    <label for="civilContainer">
+        <div id="civilContainer">
+            <select name="civilite" id="civilite">
+            <option value="">--Choisissez une option--</option>
+            <option value="M">M.</option>
+            <option value="Mme">Mme.</option>
+            </select>
+        </div>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Hobbies:</legend>
+    <label for="hobbieContainer"></label>
+    <div id="hobbieContainer">
+        <div>
+            <input type="checkbox" id="jeux" name="jeux" checked />
+            <label for="jeux">Jeux vidéo</label>
+        </div>
+    
+        <div>
+            <input type="checkbox" id="cinema" name="cinema" />
+            <label for="cinema">Cinéma</label>
+        </div>
+    
+        <div>
+            <input type="checkbox" id="lecture" name="lecture" />
+            <label for="lecture">Lecture</label>
+        </div>
+    
+        <div>
+            <input type="checkbox" id="sport" name="sport" />
+            <label for="sport">Sport</label>
+        </div>
+    
+        <div>
+            <input type="checkbox" id="info" name="info" />
+            <label for="info">Informatique</label>
+        </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>URL:</legend>
+    <label for="urlContainer">
+        <div id="urlContainer">
+            <input id="monURL" name="monURL" type="url" placeholder="https://whoisdonnie.net/"/>
+        </div>
+    </label>
+  </fieldset>
+  <label for="token">
+    <div>
+    <input type="hidden" id="postId" name="postId" value="my first website" />
+    </div>
+</label>
+<label for="submitContainer">
+    <div id="submitContainer">
+        <input type="submit" value="Validation" />
+    </div>
+</label>
+</body>
+</html>

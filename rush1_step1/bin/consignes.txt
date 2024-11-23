@@ -1,0 +1,38 @@
+sur le html :
+    - sexe (h , f ou autre)
+    - civilité (Mr, Mme)
+    - nom (min 2 chr alphabetiques)
+    - email (type email)
+    - tel (type tel)
+    - website (type url)
+    - date de naissance (format dd/mm/yyyy)
+    - hobbies (checkbox)
+    - token (type hidden)
+    - validation (submit)
+    !Label associé à chaque champ
+
+sur le css:
+    - police à 12px
+    - 1 champ sur 3 doit avoir une bordure dot bleue de 2px 
+    - tous les labels width 150px
+    - Chaque champ aura son label à sa gauche et sera cliquable (pour mettre le focus)
+    - animation :hover sur les boutons et les champs
+    - ombre verticale noire + bordures arrondies de 5px sur le bouton de validation
+
+sur le js:
+    - fonction de validation du formulaire (bouton validation) avec demande de validation
+    - colorer le fond des champs vides en rouge et preciser les erreurs
+
+sur le php (BONUS):
+    - formulaire de connexion (login/mail et mdp)
+    - verifier sans reload (#ajax) que les champs sont biens remplis (sinon erreur en js/css)
+    - 3 utilisateurs qui peuvent se co
+
+GLOBAL ! ! !
+    La norme doit être respecté (W3C)
+    Outils pour la norme :
+        - js : https://jshint.com/
+        - html : https://validator.w3.org/
+        - css : https://jigsaw.w3.org/css-validator/#validate_by_upload
+        - php : https://github.com/squizlabs/PHP_CodeSniffer
+    
